@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      个人中心
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light"></ion-item-divider>
+    <ion-item routerLink="/userdetail">个人信息</ion-item>
+    <ion-item routerLink="/useraccount">个人账户</ion-item>
+    <ion-item routerLink="/membercategory">我的团队</ion-item>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider color="light"></ion-item-divider>
+    <ion-item routerLink="/bindcard">绑定银行卡</ion-item>
+  </ion-item-group>
 </ion-content>

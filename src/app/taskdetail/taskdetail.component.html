@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">任务名称</ion-label>
+      <ion-input type="text" readonly="true" value="adfasdf"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">任务描述</ion-label>
+      <ion-textarea [(ngModel)]="desc" rows="5"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">人数</ion-label>
+      <ion-input [(ngModel)]="number" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">报酬</ion-label>
+      <ion-input [(ngModel)]="reward" type="number"></ion-input>
+    </ion-item>
+    <ion-button expand="block">发布</ion-button>
+  </ion-list>
+</ion-content>
